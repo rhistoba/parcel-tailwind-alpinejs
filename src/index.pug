@@ -1,0 +1,14 @@
+doctype html
+html
+  include components/head
+  body
+    div(x-data="{ message: 'pug index' }")
+      input(
+        type='text'
+        x-model='message'
+        class='px-1 py-2 rounded border border-gray-300'
+      )
+      p.title(x-text='message')
+    a(href='about.pug' class='text-blue-500 hover:text-blue-400')
+      | about
+

@@ -1,0 +1,11 @@
+doctype html
+html
+  include components/head
+  body
+    div(x-data="{ message: 'pug about' }")
+      input(
+        type='text'
+        x-model='message'
+        class='px-1 py-2 rounded border border-gray-300'
+      )
+      p.title(x-text='message')
